@@ -9,6 +9,10 @@ PRODUCT_BRAND := Coolpad
 PRODUCT_MODEL := C558
 PRODUCT_MANUFACTURER := Coolpad
 
+# ADB Fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.ffs.aio_compat=true
+
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
